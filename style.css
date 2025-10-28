@@ -1,0 +1,116 @@
+/* Reset básico para consistencia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Elige una fuente profesional */
+    line-height: 1.6;
+    color: #333; /* Color de texto principal */
+    background-color: #f4f4f4; /* Fondo suave */
+}
+
+a {
+    color: #007bff; /* Color de enlace, elige uno que destaque */
+    text-decoration: none; /* Quitar el subrayado por defecto */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para las secciones principales */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 15px 0;
+    position: sticky; /* Opcional: para que se quede arriba */
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Mueve el logo/nombre a la izquierda y el menú a la derecha */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+}
+
+#hero {
+    background-color: #007bff; /* Un color fuerte que resalte */
+    color: white;
+    padding: 100px 20px;
+    height: 80vh; /* Ocupa la mayor parte de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-contenido h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.boton-principal {
+    display: inline-block;
+    background: white;
+    color: #007bff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.boton-principal:hover {
+    background: #eee;
+}
+
+#proyectos {
+    background-color: white;
+}
+
+.proyecto-tarjeta {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    text-align: left;
+    transition: box-shadow 0.3s;
+}
+
+.proyecto-tarjeta:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efecto de elevación */
+}
+
+/* Contenedor Flexbox para manejar múltiples tarjetas de proyectos */
+#proyectos .contenedor {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas salten a la siguiente línea */
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
