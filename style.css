@@ -284,3 +284,44 @@ footer {
         gap: 15px;
     }
 }
+
+/*
+|--------------------------------------------------
+| ESTILOS PARA ICONOS SOCIALES
+|--------------------------------------------------
+*/
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre iconos */
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;       /* Ancho del círculo/cuadrado */
+    height: 50px;      /* Alto del círculo/cuadrado */
+    border-radius: 50%; /* Esto crea la forma circular */
+    border: 2px solid var(--color-principal); /* Borde con color principal */
+    color: var(--color-principal);
+    font-size: 1.5em; /* Tamaño del icono */
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: var(--color-principal); /* Cambia el fondo al color principal */
+    color: white; /* Cambia el icono a blanco */
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4); /* Sombra suave para efecto flotante */
+    text-decoration: none; /* Asegura que no haya subrayado */
+}
+
+/* * Ajuste de la sección de contacto para usar el contenedor de iconos 
+* (Esto sobrescribe el estilo base para que quede mejor con los iconos)
+*/
+#contacto p {
+    margin: 10px 0;
+}
