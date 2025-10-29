@@ -213,3 +213,74 @@ footer {
     text-align: center;
     font-size: 0.9em;
 }
+
+/*
+|--------------------------------------------------
+| MEDIA QUERIES (RESPONSIVIDAD)
+| Las reglas de aquí solo se aplican en pantallas pequeñas (hasta 768px)
+|--------------------------------------------------
+*/
+
+@media (max-width: 768px) {
+
+    /* Ajuste de Tipografía General */
+    body {
+        font-size: 15px;
+    }
+    
+    h2 {
+        font-size: 2em; /* Títulos más pequeños */
+        margin-bottom: 30px;
+    }
+
+    /* Navegación y Cabecera */
+    nav {
+        flex-direction: column; /* Apila el nombre y el menú */
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    nav h1 {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Los enlaces del menú van de forma vertical */
+    }
+    
+    nav ul li {
+        margin: 5px 0; /* Espacio vertical entre enlaces */
+    }
+
+    /* Sección Principal (Hero) */
+    #hero {
+        padding: 80px 20px;
+        min-height: 50vh; /* Menos alto en móviles */
+    }
+
+    .hero-contenido h2 {
+        font-size: 2.5em;
+    }
+
+    .hero-contenido p {
+        font-size: 1.1em;
+    }
+
+    /* Proyectos (CSS Grid) */
+    .contenedor-proyectos {
+        /* En pantallas pequeñas, forzamos que solo haya 1 columna */
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+    /* Secciones Generales */
+    section {
+        padding: 50px 5%; /* Menos relleno para ahorrar espacio vertical */
+    }
+    
+    #acerca ul {
+        flex-wrap: wrap; /* Si hay muchas habilidades, se envuelven */
+        justify-content: space-around;
+        gap: 15px;
+    }
+}
